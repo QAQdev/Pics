@@ -1,0 +1,86 @@
+\documentclass{article}
+% if you need to pass options to natbib, use, e.g.:
+    % \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2022
+
+% ready for submission
+\usepackage{configuration/neurips_2022}
+\usepackage{times}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2022}
+
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+%     \usepackage[final]{neurips_2022}
+
+
+% to avoid loading the natbib package, add option nonatbib:
+%    \usepackage[nonatbib]{neurips_2022}
+
+
+\usepackage[hyperindex,breaklinks,colorlinks,citecolor=blue]{hyperref} % allow link break (for arxiv)
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+
+\usepackage[flushleft]{threeparttable}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage[font=small]{caption}
+% \usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{autobreak}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage[toc, page, header]{appendix}
+\setcounter{tocdepth}{0} 
+
+% math notation.
+\input{configuration/lins_macros}
+% algorithm.
+\input{configuration/lins_algo}
+
+% some notes.
+% \usepackage[cam,width=25truecm,height=30truecm,center]{crop}
+\usepackage[textwidth=3.5cm]{todonotes}
+% \setlength{\marginparwidth}{5.cm}
+\newcommand{\seb}[1]{\todo[color=red!20,size=\footnotesize,caption={}]{S: #1}{}}
+\newcommand{\mj}[1]{\todo[color=green!20,size=\footnotesize,caption={}]{M: #1}{}}
+\newcommand{\tao}[1]{\todo[color=blue!20,size=\footnotesize,caption={}]{T: #1}{}}
+\newcommand{\imj}[1]{{\color{red}M: #1}} 
+\newcommand{\itao}[1]{{\color{red}T: #1}} 
+
+
+\title{Title}
+
+
+\author{%
+}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{main.tex}
+% \clearpage
+\bibliographystyle{abbrv}
+{\small
+	\bibliography{paper}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
