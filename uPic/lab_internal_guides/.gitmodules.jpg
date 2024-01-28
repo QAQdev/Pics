@@ -1,0 +1,3 @@
+[submodule "lab_templates/zjuthesis"]
+	path = lab_templates/zjuthesis
+	url = https://github.com/thenetadmin/zjuthesis
