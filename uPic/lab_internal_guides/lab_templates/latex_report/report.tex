@@ -1,0 +1,59 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{xcolor}         % colors
+\usepackage[hyperindex,breaklinks,colorlinks,citecolor=blue]{hyperref} % allow link break (for arxiv)
+\usepackage[boxed]{./common/lins}
+%options:
+% - final: removes all notes, changes footer, prints "discussion paper", no shade
+% - boxed: box around thms
+% - noshade: no shade
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\usepackage[flushleft]{threeparttable}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage[font=small]{caption}
+% \usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{autobreak}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+
+% % some notes.
+% % \usepackage[cam,width=25truecm,height=30truecm,center]{crop}
+% \usepackage[textwidth=3.5cm]{todonotes}
+% % \setlength{\marginparwidth}{5.cm}
+% \newcommand{\tao}[1]{\todo[color=blue!20,size=\footnotesize,caption={}]{T: #1}{}}
+% \newcommand{\itao}[1]{{\color{red}T: #1}} 
+
+%numbering
+\numberwithin{equation}{section}
+
+\title{}
+\author{}
+
+
+\begin{document}
+\maketitle
+
+\vspace{5ex}\noindent
+
+\begin{abstract}
+\end{abstract}
+
+
+\clearpage
+\bibliographystyle{common/iclr_conference}
+\bibliography{common/reference}
+\end{document}
